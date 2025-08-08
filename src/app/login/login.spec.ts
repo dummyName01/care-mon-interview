@@ -60,7 +60,7 @@ describe('Login', () => {
 
     expect(component.email).toBe('test@example.com');
     expect(component.password).toBe('securepassword');
-}));
+  }));
   it('should login and navigate to dashboard on success', fakeAsync(() => {
     component.email = 'test@example.com';
     component.password = 'password123';
