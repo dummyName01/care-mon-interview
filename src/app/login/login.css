@@ -1,0 +1,41 @@
+form {
+  margin: 0;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.mat-form-field.w-full {
+  width: 100%;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.outer-container {
+    background: #ffffffcc;
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.parent-container {
+    position: relative;
+    min-height: 100vh;
+    background: url('/assets/bg-health-image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem;
+}

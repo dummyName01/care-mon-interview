@@ -1,0 +1,21 @@
+<div class="parent-container">
+    
+    <mat-toolbar color="primary" style="justify-content: space-between;">
+   <!-- Left side: App Name and Nav Links -->
+    <div style="display: flex; align-items: center; gap: 2rem;">
+      <span style="font-weight: bold; font-size: 1.2rem;">Care Monitor App</span>
+      <div style="display: flex; gap: 1rem;">
+        <a mat-button routerLink="/dashboard" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a mat-button routerLink="/dashboard/list" routerLinkActive="active-link">List</a>
+      </div>
+    </div>
+
+    <!-- Right side: Logout -->
+    <button mat-button color="accent" (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<div class="dashboard-content">
+  <router-outlet></router-outlet>
+</div>
+</div>
+

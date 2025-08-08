@@ -1,0 +1,19 @@
+.dashboard-content {
+  padding: 2rem;
+}
+
+a.mat-button.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.parent-container {
+    position: relative;
+    min-height: 100vh;
+    background: url('/assets/bg-health-image.jpg') center/cover no-repeat;
+    padding: 2rem;
+}
+.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}

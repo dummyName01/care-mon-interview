@@ -1,0 +1,19 @@
+<div class="parent-container">
+  <div class="outer-container">
+    <h2 style="text-align: center; margin-bottom: 24px;">Care Monitor Login</h2>
+    <form (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="email" name="email" required />
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="password" name="password" type="password" required />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" style="width: 100%;">Login</button>
+      <div *ngIf="loginError" style="color: red; margin-top: 16px; text-align: center;">
+        {{ loginError }}
+      </div>
+    </form>
+  </div>
+</div>
